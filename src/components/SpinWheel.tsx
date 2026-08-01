@@ -151,19 +151,24 @@ export function SpinWheel() {
         </div>
 
         {/* Bulb ring */}
-        <div className="absolute inset-0 z-10">
+        <div className="pointer-events-none absolute inset-[-1.5rem] z-10">
           {bulbs.map((deg, i) => (
-            <span
+            <div
               key={deg}
-              className="absolute left-1/2 top-1/2 h-2 w-2 rounded-full bg-gold-soft animate-bulb"
-              style={{
-                transform: `rotate(${deg}deg) translateY(calc(-50% - 50% - 0.9rem)) `,
-                animationDelay: `${(i % 6) * 0.2}s`,
-                boxShadow: "0 0 10px var(--gold)",
-              }}
-            />
+              className="absolute inset-0"
+              style={{ transform: `rotate(${deg}deg)` }}
+            >
+              <span
+                className="absolute left-1/2 top-0 h-2.5 w-2.5 -translate-x-1/2 rounded-full bg-gold-soft animate-bulb"
+                style={{
+                  animationDelay: `${(i % 6) * 0.2}s`,
+                  boxShadow: "0 0 12px var(--gold)",
+                }}
+              />
+            </div>
           ))}
         </div>
+
 
         <div className="relative aspect-square rounded-full shadow-wheel">
           <div
