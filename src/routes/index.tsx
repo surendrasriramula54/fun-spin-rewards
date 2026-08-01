@@ -10,11 +10,11 @@ export const Route = createFileRoute("/")({
         content:
           "Spin a colorful 10-segment prize wheel for cashback, discounts, free coffee, bonus points and a grand prize. Smooth animation, sound effects and confetti.",
       },
-      { property: "og:title", content: "Spin the Wheel — Win Cashback & Prizes" },
+      { property: "og:title", content: "Spin the Wheel — Win Cashback, Discounts & Prizes" },
       {
         property: "og:description",
         content:
-          "Try your luck on a 10-segment reward wheel with smooth spins, sound effects and confetti celebrations.",
+          "Spin a colorful 10-segment prize wheel for cashback, discounts, free coffee, bonus points and a grand prize. Smooth animation, sound effects and confetti.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
