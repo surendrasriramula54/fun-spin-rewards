@@ -129,7 +129,7 @@ export function SpinWheel() {
     setRotation(target);
 
     window.setTimeout(() => {
-      const seg = SEGMENTS[index];
+      const seg = SEGMENTS[index]!;
       setSpinning(false);
       setResult(seg);
       setHistory((h) => [seg, ...h].slice(0, 5));
