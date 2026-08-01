@@ -19,6 +19,24 @@
  */
 
 @theme inline {
+  --font-display: "Baloo 2", ui-rounded, system-ui, sans-serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --color-wheel-1: var(--wheel-1);
+  --color-wheel-2: var(--wheel-2);
+  --color-wheel-3: var(--wheel-3);
+  --color-wheel-4: var(--wheel-4);
+  --color-wheel-5: var(--wheel-5);
+  --color-wheel-6: var(--wheel-6);
+  --color-wheel-7: var(--wheel-7);
+  --color-wheel-8: var(--wheel-8);
+  --color-wheel-9: var(--wheel-9);
+  --color-wheel-10: var(--wheel-10);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --animate-glow-pulse: glow-pulse 2.4s ease-in-out infinite;
+  --animate-bulb: bulb 1.2s linear infinite;
+  --animate-pop-in: pop-in 0.45s cubic-bezier(0.22, 1.4, 0.36, 1);
+  --animate-float-slow: float-slow 7s ease-in-out infinite;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -26,6 +44,7 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
