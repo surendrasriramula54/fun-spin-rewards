@@ -186,7 +186,6 @@ export function SpinWheel() {
               </defs>
               {SEGMENTS.map((s, i) => {
                 const mid = i * SEG + SEG / 2;
-                const [tx, ty] = polar(mid, R * 0.62);
                 return (
                   <g key={s.label}>
                     <path
@@ -196,11 +195,12 @@ export function SpinWheel() {
                       strokeWidth={1.5}
                     />
                     <text
-                      x={tx}
-                      y={ty}
+                      x={200}
+                      y={76}
                       textAnchor="middle"
                       dominantBaseline="middle"
-                      transform={`rotate(${mid} ${tx} ${ty})`}
+                      transform={`rotate(${mid} 200 200)`}
+
                       className="font-display"
                       fill="oklch(0.99 0.01 95)"
                       fontSize={s.short.length > 7 ? 17 : 21}
