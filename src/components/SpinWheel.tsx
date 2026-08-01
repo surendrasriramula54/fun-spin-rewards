@@ -34,7 +34,8 @@ const SPIN_MS = 5200;
 
 function polar(angleDeg: number, radius: number) {
   const rad = ((angleDeg - 90) * Math.PI) / 180;
-  return [R + radius * Math.cos(rad), R + radius * Math.sin(rad)] as const;
+  const round = (n: number) => Math.round(n * 1000) / 1000;
+  return [round(R + radius * Math.cos(rad)), round(R + radius * Math.sin(rad))] as const;
 }
 
 function segmentPath(index: number) {
